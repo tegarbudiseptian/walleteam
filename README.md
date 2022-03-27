@@ -1,4 +1,4 @@
-###Steps:
+#Steps:
 * Install ElasticSearch and run: elasticsearch.bat
 * Install Kibana and modify the kibana.yml to point the ElasticSearch:
   elasticsearch.url: "http://localhost:9200"
@@ -33,7 +33,7 @@ output {
     codec => rubydebug
   }
  
-  # Sending properly parsed log events to elasticsearch
+  ### Sending properly parsed log events to elasticsearch
   elasticsearch {
     hosts => ["localhost:9200"]
   }
@@ -43,7 +43,7 @@ output {
 * Run Logstash with previous configuration: logstash -f logstash.conf
 * The Logstash will retrieve the data from log file and and store it to ElasticSearch so we can visualize the log with Kibana.
 
-###Material Source:
+#Material Source:
 * [Javainuse](https://www.javainuse.com/spring/springboot-microservice-elk)
 * [Youtube](https://www.youtube.com/watch?v=O5ou6lBwWYw0)
 
