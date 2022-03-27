@@ -1,3 +1,5 @@
+An ELK Implementation (ElasticSearch, Logstash, Kibana) to visualize logs (e.g error log, etc) for monitoring and tracing.
+
 #Steps:
 * Install ElasticSearch and run: elasticsearch.bat
 * Install Kibana and modify the kibana.yml to point the ElasticSearch:
