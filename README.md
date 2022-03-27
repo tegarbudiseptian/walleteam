@@ -1,7 +1,7 @@
 #Steps:
 * Install ElasticSearch and run: elasticsearch.bat
 * Install Kibana and modify the kibana.yml to point the ElasticSearch:
-  elasticsearch.url: "http://localhost:9200"
+  elasticsearch.url: "http://localhost:9200", and run: kibana.bat
 * Install Logstash and make a configuration file: logstash.conf
 * Run the walleteam project to produce the log.
 * Run Logstash with previous configuration: logstash -f logstash.conf
